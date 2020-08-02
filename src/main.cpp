@@ -58,5 +58,8 @@ int main(void) {
     ofstream open_file("generated.json");
     open_file << total_write.toStyledString();
     open_file.close();
+
+    cout << "Generated Json File!" << endl;
+    cout << "Use AutoHexUploader with --web_info <path_to_generated_json> " << endl;
     return 0;
 }
