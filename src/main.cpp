@@ -53,6 +53,7 @@ int main(void) {
         total_write[i]["api_key"] = api_key;
         total_write[i]["input_force"] = force;
         total_write[i]["printer_type"] = printer_type;
+        cout << endl;
     }
     ofstream open_file("generated.json");
     open_file << total_write.toStyledString();
